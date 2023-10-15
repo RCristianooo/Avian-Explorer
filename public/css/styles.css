@@ -19,7 +19,7 @@
   /* Navbar links */
   .nav-link {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -27,7 +27,7 @@
   
   /* Change color on hover */
   .nav-link:hover {
-    background-color: #555;
+    background-color: #556B2F;
     color: white;
   }
   
@@ -50,7 +50,7 @@
   }
   
   h2 {
-    background-color: #f0f0f0;
+    background-color: #228B22;
     padding: 10px;
   }
   
@@ -59,7 +59,7 @@
   }
   
   blockquote {
-    background-color: #f0f0f0;
+    background-color: #228B22;
     padding: 10px;
     margin: 20px 0;
   }
