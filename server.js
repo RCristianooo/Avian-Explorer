@@ -64,12 +64,16 @@ app.post('/item/update/:id', async (req, res) => {
   }
 });
 
-// Delete
+// Delete 
 app.delete('/item/delete/:id', async (req, res) => {
   const { id } = req.params;
-  await Item.findByIdAndDelete(id);
-  //Send success back to the client-side function
-  res.status(200).json({ message: 'Item deleted successfully' });
+  try {
+    await Item.findByIdAndDelete(id);
+    //Send success back to the client-side function
+    res.status(200).json({ message: 'Item deleted successfully' });
+  } catch (err) {
+    res.redirect('/item/?error=true')
+  }
 });
 
 
